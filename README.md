@@ -1,5 +1,5 @@
 # Plants
-##### [deploy](https://irynakrt.github.io/Plants/)
+##### [deploy]()
 # Iryna Sittsava
 ## Student & future full-stack developer
 
