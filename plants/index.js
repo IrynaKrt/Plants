@@ -154,6 +154,11 @@ window.addEventListener('DOMContentLoaded', () => {
             dropdownSelect.style.marginTop = '148px';
             dropdownSelect.style.visibility = 'visible';
 
+            if(window.screen.width >= 768) {
+                dropdownSelect.style.marginTop = '50px';
+                dropdownSelect.style.visibility = 'visible';
+            }
+
             if(window.screen.width <= 380) {
                 document.querySelector('.contact-img').style.visibility = 'hidden';
                 document.querySelector('.contact .container h2').style.marginBottom = '42px';

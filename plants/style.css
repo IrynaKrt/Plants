@@ -176,7 +176,6 @@ ul{
     font-weight: 400px;
     color: #499A18;
     width: 463px;
-    height: 102px;
     margin: 68px 0 40px;
 }
 
@@ -192,7 +191,6 @@ ul{
     line-height: 30px;
     color: #636060;
     width: 605px;
-    height: 208px;
     margin: 0;
 }
 
@@ -484,7 +482,6 @@ div .price-content .visible {
 
 .prices-wrapper h2 {
     width: 452px;
-    height: 103px;
     margin-bottom: 38px;
     font-size: 40px;
     line-height: 50px;
@@ -794,14 +791,12 @@ div.contact-cards {
 @media screen and (max-width: 768px) {
     header {
         background-color:  #EDF2EC;
-        max-height: 117px;
         font-family: 'Inika', serif;
         margin: 0 auto;
     }
 
     .container {
         display: flex;
-        height: 47px;
         max-width: 668px;
         padding: 35px 50px;
         margin: 0 auto;
@@ -946,21 +941,14 @@ div.contact-cards {
         transition: all .3s linear;
     }
 
-    .about {
-        max-width: 768px;
-    }
-
     .about .container {
-        width: 768px;
-        height: 743px;
         flex-direction: column;
-        padding: 0;
-        margin: 40px auto 0;
+        gap: 40px;
+        padding: 40px 0 94px;
     }
 
     .about-info {
-        width: 668px;
-        height: 350px;
+        width: 100%;
         margin: 0;
     }
 
@@ -973,8 +961,7 @@ div.contact-cards {
         font-weight: 400px;
         color: #499A18;
         width: 423px;
-        height: 102px;
-        margin: 0 120px 40px 119px;
+        margin: 0 auto;
         padding: 0 5px;
     }
 
@@ -989,8 +976,7 @@ div.contact-cards {
         font-size: 20px;
         line-height: 30px;
         color: #636060;
-        width: 668px;
-        height: 208px;
+        width: 100%;
         margin: 0;
         padding: 0;
     }
@@ -998,7 +984,7 @@ div.contact-cards {
     .about-img {
         width: 250px;
         height: 258px;
-        margin: 40px 209px 0;
+        margin: 0 auto;
     }
 
     .about-img img {
@@ -1008,20 +994,16 @@ div.contact-cards {
 
     .service {
         background-color: #EDF2EC;
-        height: 1780px;
+        padding: 0;
     }
 
     .service .container {
         flex-direction: column;
-        min-width: 768px;
-        height: 1780px;
-        margin: 0 auto;
-        padding: 0;
+        padding: 60px 0 70px;
     }
 
     .services-content {
         width: 100%;
-        height: 94px;
         display: flex;
         flex-direction: column;
         column-gap: 38px;
@@ -1039,7 +1021,8 @@ div.contact-cards {
         line-height:46px;
         font-weight: 400px;
         color: #499A18;
-        margin: 60px 412px 25px 50px;
+        margin: 0 0 40px 0;
+        padding: 0;
     }
 
     div .btns {
@@ -1047,7 +1030,7 @@ div.contact-cards {
         height: 50px;
         display: flex;
         column-gap: 38px;
-        margin: 0 159px 0 50px;
+        margin: 0;
     }
 
     .btns .btn-service {
@@ -1064,6 +1047,7 @@ div.contact-cards {
         cursor: pointer;
         text-align: center;
         line-height: 26.06px;
+        margin: 0;
     }
 
     .btn-service:hover {
@@ -1074,10 +1058,9 @@ div.contact-cards {
 
     .container .services {
         width: 668px;
-        height: 1426px;
         display: flex;
         flex-wrap: wrap;
-        margin: 190px 50px 70px;
+        margin: 40px 0 0;
         padding: 0;
         justify-content: center;
         align-items: center;
@@ -1155,38 +1138,32 @@ div.contact-cards {
     }
 
     .prices {
-        max-width: 768px;
-        padding-bottom: 88px;
+        max-width: 100%;
+        padding: 40px 0 164px;
     }
 
     .prices .container {
-        width: 768px;
-        height: 370px;
-        margin: 40px auto 88px;
         padding: 0;
         font-family: 'Inter', sans-serif;
         font-style: normal;
         font-weight: 700;
+        gap: 40px;
     }
 
     .prices-select {
         margin: 0;
-        margin-right: 40px;
         padding: 0;
     }
 
     .prices-select>h2 {
         width: 135px;
-        height: 49px;
         margin-bottom: 50px;
-        margin-left: 15px;
         font-size: 35px;
         line-height: 42px;
     }
 
     .prices-select .accordion-prices {
         max-width: 332px;
-        max-height: 282px;
         border: 1px solid #E3E1D5;
         border-radius: 20px;
         display: flex;
@@ -1219,7 +1196,6 @@ div.contact-cards {
         font-weight: 700;
         line-height: 20px;
         padding: 16px 0;
-        margin-left: 40px;
     }
 
     .select-item .item-image {
@@ -1227,7 +1203,7 @@ div.contact-cards {
         cursor: pointer;
     }
 
-     div.price-content {
+    div.price-content {
         max-width: 250px;
         flex-direction: row;
         background-color: #D6E7D2;
@@ -1257,13 +1233,11 @@ div.contact-cards {
 
     .prices .prices-wrapper {
         width: 296px;
-        height: 357px;
         margin-top: 99px;
     }
 
     .prices-wrapper h2 {
         width: 296px;
-        height: 77px;
         margin-bottom: 21px;
         font-size: 25px;
         line-height: 35px;
@@ -1304,6 +1278,8 @@ div.contact-cards {
     .prices-wrapper .prices-image {
         text-align: right;
         margin-top: 34px;
+        height: 174px;
+        margin-bottom: 88px;
     }
 
     .prices-image img {
@@ -1313,26 +1289,24 @@ div.contact-cards {
 
     .contact {
         background-color: #EDF2EC;
-        min-width: 768px;
-        max-height: 739px;
         padding: 0;
         margin: 0;
     }
 
     .contact .container {
-        min-width: 768px;
-        min-height: 739px;
         flex-direction: column;
-        padding: 0;
+        align-items: center;
+        padding: 40px 0 0;
         margin: 0 auto;
+        height: 699px;
     }
 
     .contact .container .contact-img {
         width: 200px;
         height: 248px;
         margin: 0 auto;
+        margin-top: auto;
         order: 3;
-        margin-top: 16px;
     }
 
     .contact .container .contact-img img {
@@ -1342,22 +1316,21 @@ div.contact-cards {
 
     .contact .container h2 {
         width: 192px;
-        height: 51px;
         font-family: 'Inika', serif;
         font-style: normal;
         font-weight: 700;
         font-size: 40px;
         line-height: 52px;
         color: #499A18;
-        margin: 40px auto 100px;
+        margin: 0 auto 61px;
         text-align: center;
     }
 
     .contact .contact-city {
         display: flex;
-        width: 450px;
+        max-width: 450px;
         height: 50px;
-        margin: 0 160px 0 158px;
+        margin: 0;
         background-color: #D6E7D2;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: none;
@@ -1373,11 +1346,11 @@ div.contact-cards {
         color: #717171;
         width: 204px;
         height: 40px;
-        margin: 5px 175px 5px 20px;
+        margin: 5px 0 5px 0;
     }
 
     .contact-city .item-image {
-        margin: 17px 35px 17px 0;
+        margin: 0;
         cursor: pointer;
     }
 
@@ -1401,7 +1374,6 @@ div.contact-cards {
         background-color: #DCE9D9;
         color: #499A18;
         margin: -230px auto;
-        margin-left: 158px;
         visibility: hidden;
     }
 
@@ -1448,8 +1420,7 @@ div.contact-cards {
         background-color: #EDF2EC;
         color: #000000;
         font-family: 'Inter', sans-serif;
-        margin: 265px 0 0;
-        margin-left: 158px;
+        margin: 61px 0 0;
         padding: 17px 76px 32px 33px;
         border:  1px solid #000000;
         border-radius: 20px;
@@ -1462,19 +1433,16 @@ div.contact-cards {
     }
 
     .plants-footer {
-        min-width: 768px;
-        max-height: 181px;
         font-family: 'Inter', sans-serif;
         font-style: normal;
         font-weight: 400;
         font-size: 20px;
         line-height: 24px;
-        padding: 31px 0;
+        padding: 31px 0 27px;
     }
 
     .plants-footer .container {
         width: 210px;
-        height: 130px;
         flex-direction: column;
         padding: 0;
         margin: 0 auto;
@@ -1482,11 +1450,13 @@ div.contact-cards {
 
     .plants-footer .git {
         padding: 0 19px;
+        max-height: 24px;
     }
 
     .git>p {
         margin: 0;
         padding: 0;
+        line-height: 24px;
     }
 
     .git a {
@@ -1499,12 +1469,13 @@ div.contact-cards {
     }
 
     .plants-footer .name {
-        margin: 20px 0 25px;
+        margin: 16px 0;
+        max-height: 24px;
     }
 
     .plants-footer .name a.name {
         max-width: 211px;
-        min-height: 50px;
+        max-height: 50px;
         text-decoration: none;
         line-height: 24px;
         color: #000;
@@ -1518,7 +1489,7 @@ div.contact-cards {
 
     .plants-footer div.plants-social {
         width: 188px;
-        height: 50px;
+        max-height: 50px;
         text-align: center;
         margin: 0;
         padding: 0 11px;
@@ -1527,6 +1498,7 @@ div.contact-cards {
     .plants-social ul {
         display: flex;
         column-gap: 20px;
+        align-items: center;
         margin: 0;
         padding: 0;
     }
