@@ -1,6 +1,6 @@
 # Plants
 
-##### [deploy]()
+##### [deploy](https://irynakrt.github.io/Plants/plants)
 
 # Iryna Sittsava
 
