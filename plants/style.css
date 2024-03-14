@@ -5,6 +5,10 @@
     scroll-behavior: smooth;
 }
 
+body {
+    max-width: 100%;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
@@ -31,8 +35,9 @@ header {
 
 .container {
     display: flex;
-    height: 134px;
-    max-width: 1440px;
+    max-width: 1220px;
+    margin: 0 auto;
+    justify-content: space-between;
 }
 
 .nav-logo {
@@ -40,8 +45,7 @@ header {
     width: 79px;
     height: 21px;
     padding: 52px 0 60px;
-    margin-left: 111px;
-    margin-right: 689px;
+    margin: 0;
 }
 
 .nav-logo>img {
@@ -63,7 +67,7 @@ header {
 
 .navbar {
     padding: 42px 0;
-    margin-right: 109px
+    margin: 0;
 }
 
 ul{
@@ -99,33 +103,27 @@ ul{
 
 .welcome {
     background-color: #EDF2EC;
-    height: 532px;
     font-family: 'Inter', sans-serif;
 }
 
 .welcome .container {
-    width: 1222px;
-    height: 407px;
-
+    width: 1220px;
+    justify-content: space-between;
+    padding: 62px 0;
 }
 
 .welcome-img {
-    margin-top: 62px;
-    margin-right: 224px;
     width: 448px;
-    height: 407px;
+    margin: 0;
 }
 
 .welcome-info {
-    width: 549px;
-    height: 340px;
+    max-width: 550px;
     margin: 98px 0 94px;
     color: #717171;
 }
 
 .welcome-info h1 {
-    width: 549px;
-    height: 101px;
     font-size: 45px;
     font-weight: 700;
     line-height: 50px;
@@ -137,8 +135,6 @@ ul{
 }
 
 .welcome-info p  {
-    width: 525px;
-    height: 105px;
     font-size: 20px;
     line-height: 35px;
     margin-top: 42px;
@@ -167,18 +163,9 @@ ul{
     transition: all .3s linear;
 }
 
-.about {
-    max-width: 1440px;
-}
-
 .about .container {
-    width: 1222px;
-    height: 479px;
-    margin: 93px 0 94px;
-}
-
-.about-info {
-    margin-left: 109px;
+    width: 1220px;
+    padding: 93px 0;
 }
 
 .about-h-two h2 {
@@ -217,7 +204,7 @@ ul{
 
 .service {
     background-color: #EDF2EC;
-    height: 1300px;
+    padding: 32px 0 121px;
 }
 
 .service .container {
@@ -225,25 +212,20 @@ ul{
 }
 
 .services-content {
-    width: 1007px;
-    height: 94px;
     display: flex;
     column-gap: 38px;
-    margin: 0 324px 0 109px;
-    padding-top: 40px;
-    padding-bottom: 90px;
 }
 
 .services-content>h2.service {
     max-width: 306px;
-    height: 94px;
     font-family: 'Inika', serif;
     font-style: normal;
     font-size: 40px;
     line-height: 52px;
-    font-weight: 400px;
+    font-weight: 400;
     color: #499A18;
-    margin-right: 104px;
+    margin: 0;
+    padding-bottom: 90px;
 }
 
 div .btns {
@@ -277,11 +259,9 @@ div .btns {
 }
 
 .container .services {
-    width: 1222px;
-    height: 955px;
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 109px 121px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
     justify-content: center;
     align-items: center;
     column-gap: 116px;
@@ -360,27 +340,22 @@ div .btns {
 }
 
 .prices {
-    max-width: 1440px;
+    padding: 40px 0 128px;
 }
 
+
 .prices .container {
-    width: 1222px;
-    height: 405px;
-    margin: 38px 109px 115px;
     font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 700;
 }
 
 .prices-select {
-    margin-right: 438px;
     max-width: 332px;
-    max-height: 391px;
+    margin: 0;
 }
 
 .prices-select>h2 {
-    width: 135px;
-    height: 49px;
     margin-bottom: 60px;
     margin-left: 0;
     font-size: 40px;
@@ -388,8 +363,6 @@ div .btns {
 }
 
 .prices-select .accordion-prices {
-    max-width: 332px;
-    max-height: 282px;
     border: 1px solid #E3E1D5;
     border-radius: 20px;
     display: flex;
@@ -561,17 +534,13 @@ div .price-content .visible {
 
 .contact {
     background-color: #EDF2EC;
-}
-
-.contact .container {
-    max-width: 1440px;
-    height: 550px;
+    padding-top: 52px;
 }
 
 .contact .container .contact-img {
     width: 400px;
     height: 497px;
-    margin: 53px 113px 0 109px;
+    margin: 0;
 }
 
 .contact .container h2 {
@@ -582,27 +551,24 @@ div .price-content .visible {
     line-height: 52px;
     color: #499A18;
     margin: 0;
-    margin-top: 60px;
     text-align: center;
 }
 .contact .container .contact-wrapper {
     display: flex;
     flex-direction: column;
     font-family: 'Inter' sans-serif;
-    width: 450px;
-    height: 284px;
     margin: 0;
     padding: 0;
+    position: relative;
 }
 
 .contact .contact-city {
     display: flex;
-    width: 450px;
-    height: 50px;
-    margin: 148px 109px 0 64px;
+    margin: 98px 0 0;
     background-color: #D6E7D2;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: none;
+    align-items:baseline;
 }
 
 .contact-city .active {
@@ -621,7 +587,6 @@ div .price-content .visible {
     color: #717171;
     width: 204px;
     height: 40px;
-    margin: 5px 0 5px 20px;
 }
 
 .contact-city .item-image {
@@ -649,9 +614,9 @@ div.dropdown-select {
     min-height: 234px;
     background-color: #DCE9D9;
     color: #499A18;
-    margin: -230px 0 ;
-    margin-left: 64px;
+    margin: -230px 0;
     visibility: hidden;
+    position: absolute;
 }
 
 .dropdown-select ul.dropdown {
@@ -692,15 +657,14 @@ div.dropdown-select {
 div.contact-cards {
     display: none;
     width: 340px;
-    max-height: 214px;
     background-color: #EDF2EC;
     color: #000000;
     font-family: 'Inter', sans-serif;
-    margin: 265px 0 ;
-    margin-left: 64px;
+    margin: 47px 0 0;
     padding: 17px 76px 32px 33px;
     border:  1px solid #000000;
     border-radius: 20px;
+    position: relative;
 }
 
 .contact-cards .contact-card {
@@ -757,21 +721,13 @@ div.contact-cards {
 
 
 .plants-footer {
-    min-width: 1440px;
     font-family: 'Inter', sans-serif;
-    max-height: 130px;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
     line-height: 50px;
-    padding: 40px;
+    padding: 40px 0;
 }
-
-.plants-footer .container {
-    width: 1222px;
-    height: 50px;
-}
-
 
 .plants-footer .git {
     display: flex;
@@ -795,12 +751,9 @@ div.contact-cards {
 }
 
 .plants-footer .name a.name {
-    width: 211px;
-    height: 50px;
     text-decoration: none;
     color: #000;
     text-align: center;
-    padding: 40px 317px 40px 324px;
     transition: all 0.2s ease;
     -webkit-transition: all 0.2s ease;
     -moz-transition: all 0.2s ease;
@@ -813,8 +766,6 @@ div.contact-cards {
 }
 
 .plants-footer div.plants-social {
-    width: 188px;
-    height: 50px;
     text-align: center;
     margin: 0;
 }
@@ -834,7 +785,7 @@ div.contact-cards {
     box-shadow: 0 10px 90px #E06733;
 }
 
-@media screen and (max-width: 1400px) and (min-width: 768px) {
+@media screen and (max-width: 768px) {
     header {
         background-color:  #EDF2EC;
         max-height: 117px;
