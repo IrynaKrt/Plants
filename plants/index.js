@@ -151,7 +151,7 @@ window.addEventListener('DOMContentLoaded', () => {
             contactItem.style.outline = '1px solid #D6E7D2';
             contactBtn.src = 'assets/images/accordion_btn_open.png';
 
-            dropdownSelect.style.marginTop = '0.5px';
+            dropdownSelect.style.marginTop = '148px';
             dropdownSelect.style.visibility = 'visible';
 
             if(window.screen.width <= 380) {

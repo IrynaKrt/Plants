@@ -560,15 +560,20 @@ div .price-content .visible {
     margin: 0;
     padding: 0;
     position: relative;
+    width: 450px;
 }
 
 .contact .contact-city {
     display: flex;
     margin: 98px 0 0;
+    max-width: 100%;
+    height: 50px;
     background-color: #D6E7D2;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: none;
-    align-items:baseline;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 35px 0 20px;
 }
 
 .contact-city .active {
@@ -587,11 +592,12 @@ div .price-content .visible {
     color: #717171;
     width: 204px;
     height: 40px;
+    margin: 0;
 }
 
 .contact-city .item-image {
-    margin: 17px 35px 17px 175px;
     cursor: pointer;
+    margin: 0;
 }
 
 .contact-city:hover,
