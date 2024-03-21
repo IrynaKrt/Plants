@@ -257,17 +257,17 @@ div .btns {
 }
 
 .container .services {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
     margin: 0;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    column-gap: 116px;
     row-gap: 55px;
 }
 
-.services .service-item, .service-item .service-item{
+.services .service-item {
     width: 330px;
+    margin: 0;
     height: 450px;
     border: 1px solid #E3E1D5;
     border-radius: 20px;
@@ -299,7 +299,7 @@ div .btns {
 }
 
 .service-item .service-img img{
-    width: 329px;
+    width: 100%;
     height: 350px;
     display: flex;
     flex-wrap: wrap;
@@ -310,7 +310,7 @@ div .btns {
 }
 
 .service-item .item-info{
-    width: 330px;
+    width: 86%;
     height: 100px;
     padding: 10px 0 36px;
 }
@@ -324,7 +324,7 @@ div .btns {
     font-size: 20px;
     line-height: 20px;
     color: #E06733;
-    margin: 0 105px 10px;
+    margin: 0 auto 10px;
 }
 .service-item .item-info p {
     width: 268px;
@@ -788,7 +788,7 @@ div.contact-cards {
     box-shadow: 0 10px 90px #E06733;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1240px) {
     header {
         background-color:  #EDF2EC;
         font-family: 'Inika', serif;
@@ -797,7 +797,7 @@ div.contact-cards {
 
     .container {
         display: flex;
-        max-width: 668px;
+        max-width: 86%;
         padding: 35px 50px;
         margin: 0 auto;
     }
@@ -870,8 +870,7 @@ div.contact-cards {
     }
 
     .welcome .container {
-        width: 668px;
-        height: 310px;
+        width: 86%;
         margin: 0 auto 70px;
         padding: 40px 0 0;
     }
@@ -892,7 +891,7 @@ div.contact-cards {
     .welcome-info {
         width: 346px;
         height: 310px;
-        margin: 0 auto;
+        margin: 0;
         margin-right: 42px;
         color: #717171;
     }
@@ -1057,14 +1056,11 @@ div.contact-cards {
     }
 
     .container .services {
-        width: 668px;
-        display: flex;
-        flex-wrap: wrap;
+        width: 100%;
         margin: 40px 0 0;
         padding: 0;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        column-gap: 106px;
         row-gap: 38px;
     }
 
@@ -1092,7 +1088,7 @@ div.contact-cards {
     }
 
     .service-item .service-img {
-        width: 280px;
+        width: 100%;
         min-height: 350px;
         display: flex;
         flex-wrap: wrap;
@@ -1515,7 +1511,7 @@ div.contact-cards {
     }
 }
 
-@media screen and (max-width: 760px) and (min-width: 320px) {
+@media screen and (max-width: 760px) {
     header {
         background-color:  #EDF2EC;
         max-height: 96px;
@@ -1525,17 +1521,16 @@ div.contact-cards {
 
     .container {
         display: flex;
-        height: 24px;
-        min-width:330px;
+        width: 86%;
         padding: 35px 25px;
         margin: 0 auto;
-        justify-content: center;
+        justify-content: space-between;
         overflow: hidden;
     }
 
     .nav-logo {
         display: flex;
-        margin: 0 213px 0 0;
+        margin: 0;
         padding: 0;
     }
 
@@ -1663,8 +1658,7 @@ div.contact-cards {
     }
 
     .welcome .container {
-        width: 330px;
-        height: 252px;
+        width: 86%;
         margin: 0 auto;
         padding: 24px 25px;
         flex-direction: column;
@@ -1675,15 +1669,13 @@ div.contact-cards {
     }
 
     .welcome-info {
-        width: 330px;
-        height: 252px;
         margin: 0;
-        margin-right: 42px;
         color: #717171;
+        width: 100%;
     }
 
     .welcome-info h1 {
-        width: 330px;
+        width: 90%;
         height: 72px;
         font-size: 25px;
         font-weight: 700;
@@ -1697,8 +1689,7 @@ div.contact-cards {
     }
 
     .welcome-info p  {
-        width: 314px;
-        height: 105px;
+        width: 100%;
         font-size: 16px;
         line-height: 25px;
         margin: 0;
@@ -1726,16 +1717,15 @@ div.contact-cards {
     }
 
     .about {
-        max-width: 380px;
         margin: 0 auto;
     }
 
     .about .container {
-        width: 330px;
-        height: 455px;
+        width: 86%;
         flex-direction: column;
         padding: 30px 25px;
         margin: 0 auto;
+        gap: 0;
     }
 
     .about-info {
@@ -1753,7 +1743,7 @@ div.contact-cards {
         color: #499A18;
         width: 288px;
         height: 58px;
-        margin: 0 21px 21px;
+        margin: 0 auto 21px;
         padding: 0;
     }
 
@@ -1768,7 +1758,7 @@ div.contact-cards {
         font-size: 15px;
         line-height: 25px;
         color: #636060;
-        width: 330px;
+        width: 100%;
         height: 228px;
         margin: 0;
         padding: 0;
@@ -1777,7 +1767,7 @@ div.contact-cards {
     .about-img {
         width: 150px;
         height: 147px;
-        margin: 0 90px;
+        margin: 0 auto;
     }
 
     .about-img img {
@@ -1787,20 +1777,18 @@ div.contact-cards {
 
     .service {
         background-color: #EDF2EC;
-        height: 3150px;
         margin: 0 auto;
     }
 
     .service .container {
         flex-direction: column;
-        min-width: 380px;
-        height: 3150px;
+        width: 86%;
         margin: 0 auto;
         padding: 0;
     }
 
     .services-content {
-        max-width: 380px;
+        max-width: 100%;
         height: 69px;
         display: flex;
         flex-direction: column;
@@ -1820,26 +1808,21 @@ div.contact-cards {
         line-height: 33px;
         font-weight: 400;
         color: #499A18;
-        margin: 30px 168px 0 25px;
+        margin: 30px 168px 0 0;
     }
 
     div .btns {
-        width: 121px;
-        height: 35px;
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-column-gap: 10px;
-        grid-row-gap: 9px;
-        height: 50px;
-        display: grid;
-        margin: 30px 0 40px 25px;
+        column-gap: 10px;
+        row-gap: 9px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 30px 0 40px 0;
         padding: 0;
+        max-width: 90%;
     }
 
     .btns .btn-service {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
         width: 121px;
         height: 35px;
         border: 1px solid #E06733;
@@ -1864,15 +1847,11 @@ div.contact-cards {
     }
 
     .container .services {
-        width: 280px;
-        height: 2870px;
-        display: flex;
-        flex-wrap: wrap;
+        width: 100%;
         margin: 190px auto 27px;
-        padding: 0;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        column-gap: 106px;
+        padding: 0;
         row-gap: 34px;
     }
 
@@ -1896,7 +1875,7 @@ div.contact-cards {
     }
 
     .service-item .service-img {
-        width: 280px;
+        width: 100%;
         min-height: 350px;
         display: flex;
         flex-wrap: wrap;
@@ -1942,29 +1921,22 @@ div.contact-cards {
     }
 
     .prices {
-        max-width: 382px;
-        max-height: 512px;
-        padding-bottom: 88px;
-        padding: 0 0;
-        margin: 0 auto;
+        padding: 0;
     }
 
     .prices .container {
-        width: 382px;
-        height: 512px;
+        width: 86%;
         flex-direction: column;
-        margin: 40px 50px 88px;
-        padding: 0;
+        margin: 0 auto;
+        padding: 40px 0;
         font-family: 'Inter', sans-serif;
         font-style: normal;
         font-weight: 700;
-        margin: 0;
-        padding: 0;
+        gap: 0;
     }
 
     .prices-select {
         width: 224px;
-        max-height: 302px;
         text-align: center;
         align-items: center;
         margin: 0 auto;
@@ -1973,7 +1945,7 @@ div.contact-cards {
     .prices-select>h2 {
         width: 90px;
         height: 27px;
-        margin: 0 67px 40px;
+        margin: 0 auto 40px;
         font-size: 25px;
         font-weight: 700;
         line-height: 30px;
@@ -1981,7 +1953,6 @@ div.contact-cards {
 
     .prices-select .accordion-prices {
         max-width: 224px;
-        max-height: 235px;
         border: 1px solid #E3E1D5;
         border-radius: 20px;
         display: flex;
@@ -1989,7 +1960,6 @@ div.contact-cards {
         row-gap: 20px;
         padding: 29px 22px;
         margin: 0;
-        margin-bottom: 19px;
     }
 
     .accordion-prices .select-item .button{
@@ -2104,7 +2074,7 @@ div.contact-cards {
     .prices-wrapper h2 {
         width: 230px;
         height: 77px;
-        margin-top: 16px;
+        margin-top: 19px;
         margin-bottom: 14px;
         font-size: 20px;
         line-height: 35px;
@@ -2148,17 +2118,17 @@ div.contact-cards {
 
     .contact {
         background-color: #EDF2EC;
-        min-width: 384px;
         padding: 0;
-        margin: 0 auto;
+        margin: 0;
     }
 
     .contact>.container {
-        min-width: 380px;
-        max-height: 445px;
+        width: 380px;
+        height: 445px;
         flex-direction: column;
-        padding: 0;
+        padding: 25px 0 0;
         margin: 0 auto;
+        gap: 0;
     }
 
     .contact .container .contact-img {
@@ -2183,19 +2153,24 @@ div.contact-cards {
         font-size: 25px;
         line-height: 32px;
         color: #499A18;
-        margin: 25px auto 80px;
+        margin: 0 auto;
         text-align: center;
+    }
+
+    .contact .container .contact-wrapper {
+        width: 300px;
     }
 
     .contact .container .contact-city {
         display: flex;
-        width: 300px;
+        max-width: 300px;
         height: 50px;
-        margin: 0 0 0 42px;
+        margin: 0;
         background-color: #D6E7D2;
         font-size: 16px;
         box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         border-radius: none;
+        padding: 0 20px;
     }
 
     .contact .container.contact-city .city-item {
@@ -2208,10 +2183,10 @@ div.contact-cards {
         color: #717171;
         min-width: 204px;
         height: 40px;
-        margin: 5px 0 5px 20px;
+        margin: 5px 0 5px;
     }
     .contact .container .contact-city .item-image {
-        margin: 17px 20px 17px 40px;
+        margin: 0;
         cursor: pointer;
     }
 
@@ -2236,7 +2211,6 @@ div.contact-cards {
         font-size: 16px;
         color: #499A18;
         margin: -230px auto;
-        margin-left: 42px;
         visibility: hidden;
     }
 
@@ -2441,5 +2415,16 @@ div.contact-cards {
 
     .plants-social ul li:hover {
         box-shadow: 0 10px 90px #E06733;
+    }
+}
+
+
+@media screen and (max-width: 660px) {
+    .container .services {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        margin: 190px auto 27px;
+        width: 278px;
     }
 }
